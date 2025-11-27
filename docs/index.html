@@ -1,1 +1,106 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Englisch Lernen</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin: 1rem 0;
+        }
+        nav a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+        main {
+            max-width: 800px;
+            margin: auto;
+            padding: 1rem;
+        }
+        h1, h2 {
+            text-align: center;
+        }
+        .vocab-card {
+            background-color: white;
+            padding: 1rem;
+            margin: 1rem 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        .vocab-card button {
+            margin-top: 1rem;
+            padding: 0.5rem 1rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        footer {
+            text-align: center;
+            padding: 1rem;
+            margin-top: 2rem;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Englisch Lernen</h1>
+    </header>
+    <nav>
+        <a href="#vocabulary">Vokabeln</a>
+        <a href="#grammar">Grammatik</a>
+        <a href="#practice">Übungen</a>
+    </nav>
+    <main>
+        <section id="vocabulary">
+            <h2>Vokabeltrainer</h2>
+            <div class="vocab-card">
+                <p id="english-word">Hello</p>
+                <p id="german-translation" style="display:none;">Hallo</p>
+                <button onclick="showTranslation()">Übersetzung anzeigen</button>
+                <button onclick="nextWord()">Nächstes Wort</button>
+            </div>
+        </section>
+
+        <section id="grammar">
+            <h2>Grammatik</h2>
+            <p>Hier kannst du kurze Grammatik-Erklärungen einfügen, z. B.:</p>
+            <ul>
+                <li>Present Simple: I work, you play, he/she/it works</li>
+                <li>Past Simple: I worked, you played, he/she/it worked</li>
+            </ul>
+        </section>
+
+        <section id="practice">
+            <h2>Übungen</h2>
+            <p>Kurze Multiple-Choice-Übungen oder kleine Quizze lassen sich hier einfügen.</p>
+        </section>
+    </main>
+    <footer>
+        &copy; 2025 Englisch Lernen Website
+    </footer>
+
+    <script>
+        const vocab =
 
